@@ -1,0 +1,9 @@
+/* TicketFlow SAP — Metadata Extension for ZTICKET_C
+   Reserved for future UI annotation overrides.
+   All current UI annotations are defined directly in ZTICKET_C.ddls. */
+
+@Metadata.layer: #CORE
+annotate view ZTICKET_C with
+{
+
+}
