@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TicketFlow SAP - OData V4 UI Service Binding -->
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SRVB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SRVB_HEADER>
+    <SRVB_NAME>ZTICKET_SRV_BIND</SRVB_NAME>
+    <SRVD_NAME>ZTICKET_SRV_DEF</SRVD_NAME>
+    <BINDING_TYPE>ODATA_V4_UI</BINDING_TYPE>
+    <DESCRIPTION>TicketFlow SAP - OData V4 UI Binding</DESCRIPTION>
+   </SRVB_HEADER>
+  </asx:values>
+ </asx:abap>
+</abapGit>

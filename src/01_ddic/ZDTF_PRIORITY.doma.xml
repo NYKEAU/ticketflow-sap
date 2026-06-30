@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Domain for fixed priority values: L=Low, N=Normal, H=High, C=Critical -->
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZDTF_PRIORITY</DOMNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000001</LENG>
+    <OUTPUTLEN>000001</OUTPUTLEN>
+    <DOMTEXT>Ticket priority</DOMTEXT>
+   </DD01V>
+   <DD07V_TABLE>
+    <DD07V>
+     <DOMNAME>ZDTF_PRIORITY</DOMNAME>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <VALPOS>0001</VALPOS>
+     <DOMVALUE_L>L</DOMVALUE_L>
+     <DDTEXT>Basse</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <DOMNAME>ZDTF_PRIORITY</DOMNAME>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <VALPOS>0002</VALPOS>
+     <DOMVALUE_L>N</DOMVALUE_L>
+     <DDTEXT>Normale</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <DOMNAME>ZDTF_PRIORITY</DOMNAME>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <VALPOS>0003</VALPOS>
+     <DOMVALUE_L>H</DOMVALUE_L>
+     <DDTEXT>Haute</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <DOMNAME>ZDTF_PRIORITY</DOMNAME>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <VALPOS>0004</VALPOS>
+     <DOMVALUE_L>C</DOMVALUE_L>
+     <DDTEXT>Critique</DDTEXT>
+    </DD07V>
+   </DD07V_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>
