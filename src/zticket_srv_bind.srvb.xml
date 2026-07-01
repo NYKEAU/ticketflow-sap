@@ -8,6 +8,13 @@
     <BINDING_TYPE>ODATA_V4_UI</BINDING_TYPE>
     <DESCRIPTION>TicketFlow SAP - OData V4 UI Binding</DESCRIPTION>
    </SRVB_HEADER>
+   <DESCRIPTION_TABLE>
+    <item>
+     <SPRAS>E</SPRAS>
+     <SRVB_NAME>ZTICKET_SRV_BIND</SRVB_NAME>
+     <DESCRIPTION>TicketFlow SAP - OData V4 UI Binding</DESCRIPTION>
+    </item>
+   </DESCRIPTION_TABLE>
   </asx:values>
  </asx:abap>
 </abapGit>
