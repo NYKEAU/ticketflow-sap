@@ -1,52 +1,40 @@
-managed implementation in class ZBP_TICKET_I unique;
+managed implementation in class zbp_ticket_i unique;
 strict ( 2 );
 
 define behavior for ZTICKET_I alias Ticket
   persistent table zticketsap
   lock master
+  authorization master ( global )
   etag master UpdatedAt
 {
-  field ( numbering : managed, readonly ) TicketId;
-  field ( readonly ) CreatedAt, CreatedBy, UpdatedAt;
-  field ( mandatory ) Title, Priority, Status;
-
   create;
   update;
   delete;
 
-  determination setTimestamps on modify { create; }
-  determination setUpdateTimestamp on modify { field Title, Description, Priority, Status, Category, AssignedTo, ClosingComment; }
+  field ( readonly ) TicketId, CreatedAt, CreatedBy, UpdatedAt;
+  field ( mandatory ) Title, Priority, Status;
 
-  validation validateStatus on save { field Status; }
+  determination setCreationData   on modify { create; }
+  determination setUpdateTimestamp on modify { field Title, Description, Priority,
+                                               Status, Category, AssignedTo, ClosingComment; }
+
   validation checkClosingComment on save { field Status, ClosingComment; }
 
-  action ( features : instance ) assignTicket
-    parameter ZTICKET_ASGN_INP {
-      AssignedTo : UNAME;
-    }
-    result [1] $self;
-
-  action ( features : instance ) closeTicket
-    parameter ZTICKET_CLOS_INP {
-      ClosingComment : CHAR255;
-    }
-    result [1] $self;
-
-  action ( features : instance ) reopenTicket
-    result [1] $self;
+  action ( features : instance ) closeTicket  result [1] $self;
+  action ( features : instance ) reopenTicket result [1] $self;
 
   mapping for zticketsap
   {
-    TicketId        = ticket_id;
-    Title           = title;
-    Description     = description;
-    Priority        = priority;
-    Status          = status;
-    Category        = category;
-    AssignedTo      = assigned_to;
-    CreatedAt       = created_at;
-    UpdatedAt       = updated_at;
-    ClosingComment  = closing_comment;
-    CreatedBy       = created_by;
+    TicketId       = ticket_id;
+    Title          = title;
+    Description    = description;
+    Priority       = priority;
+    Status         = status;
+    Category       = category;
+    AssignedTo     = assigned_to;
+    CreatedAt      = created_at;
+    UpdatedAt      = updated_at;
+    ClosingComment = closing_comment;
+    CreatedBy      = created_by;
   }
 }

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition Ticket'
+define service ZTICKET_SD {
+  expose ZTICKET_I as Ticket;
+}

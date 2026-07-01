@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Data element for ticket status, referencing domain ZDTF_STATUS -->
+﻿<?xml version="1.0" encoding="utf-8"?>
 <abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
@@ -7,13 +6,18 @@
     <ROLLNAME>ZDTF_STATUS_DE</ROLLNAME>
     <DDLANGUAGE>E</DDLANGUAGE>
     <DOMNAME>ZDTF_STATUS</DOMNAME>
+    <HEADLEN>07</HEADLEN>
+    <SCRLEN1>07</SCRLEN1>
+    <SCRLEN2>16</SCRLEN2>
+    <SCRLEN3>17</SCRLEN3>
+    <DDTEXT>Ticket Status</DDTEXT>
+    <REPTEXT>Statut</REPTEXT>
     <SCRTEXT_S>Statut</SCRTEXT_S>
-    <SCRTEXT_M>Statut ticket</SCRTEXT_M>
+    <SCRTEXT_M>Statut du ticket</SCRTEXT_M>
     <SCRTEXT_L>Statut du ticket</SCRTEXT_L>
-    <REPTEXT>Statut du ticket</REPTEXT>
-    <DATATYPE>CHAR</DATATYPE>
-    <LENG>000002</LENG>
-    <OUTPUTLEN>000002</OUTPUTLEN>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
    </DD04V>
   </asx:values>
  </asx:abap>

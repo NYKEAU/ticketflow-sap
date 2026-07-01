@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Domain for fixed ticket status values: NW=New, IP=In Progress, OH=On Hold, RS=Resolved, CL=Closed -->
+﻿<?xml version="1.0" encoding="utf-8"?>
 <abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
@@ -9,45 +8,7 @@
     <DATATYPE>CHAR</DATATYPE>
     <LENG>000002</LENG>
     <OUTPUTLEN>000002</OUTPUTLEN>
-    <DOMTEXT>Ticket status</DOMTEXT>
    </DD01V>
-   <DD07V_TABLE>
-    <DD07V>
-     <DOMNAME>ZDTF_STATUS</DOMNAME>
-     <DDLANGUAGE>E</DDLANGUAGE>
-     <VALPOS>0001</VALPOS>
-     <DOMVALUE_L>NW</DOMVALUE_L>
-     <DDTEXT>Nouveau</DDTEXT>
-    </DD07V>
-    <DD07V>
-     <DOMNAME>ZDTF_STATUS</DOMNAME>
-     <DDLANGUAGE>E</DDLANGUAGE>
-     <VALPOS>0002</VALPOS>
-     <DOMVALUE_L>IP</DOMVALUE_L>
-     <DDTEXT>En cours</DDTEXT>
-    </DD07V>
-    <DD07V>
-     <DOMNAME>ZDTF_STATUS</DOMNAME>
-     <DDLANGUAGE>E</DDLANGUAGE>
-     <VALPOS>0003</VALPOS>
-     <DOMVALUE_L>OH</DOMVALUE_L>
-     <DDTEXT>En attente</DDTEXT>
-    </DD07V>
-    <DD07V>
-     <DOMNAME>ZDTF_STATUS</DOMNAME>
-     <DDLANGUAGE>E</DDLANGUAGE>
-     <VALPOS>0004</VALPOS>
-     <DOMVALUE_L>RS</DOMVALUE_L>
-     <DDTEXT>Résolu</DDTEXT>
-    </DD07V>
-    <DD07V>
-     <DOMNAME>ZDTF_STATUS</DOMNAME>
-     <DDLANGUAGE>E</DDLANGUAGE>
-     <VALPOS>0005</VALPOS>
-     <DOMVALUE_L>CL</DOMVALUE_L>
-     <DDTEXT>Fermé</DDTEXT>
-    </DD07V>
-   </DD07V_TABLE>
   </asx:values>
  </asx:abap>
 </abapGit>
